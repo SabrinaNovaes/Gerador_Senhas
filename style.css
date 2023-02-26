@@ -1,0 +1,147 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--bg);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logo {
+    color: var(--fontColor);
+    margin-bottom: 24px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-top: 8rem;
+}
+
+.container-input {
+    max-width: 480px;
+    margin: 14px;
+}
+
+.container-input span {
+    color: var(--fontColor);
+    font-size: 22px;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    border-radius: 5px;
+    background: #DFDFDF;
+    height: 18px;
+    outline: none;
+    margin-top: 8px;
+}
+
+.button-cta {
+    height: 40px;
+    background-color: #3EB72B;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 40px;
+    color: var(--fontColor);
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.container-password {
+    max-width: 480px;
+    margin: 14px 0;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    cursor: pointer;
+}
+
+.title {
+    text-align: center;
+    color: var(--fontColor);
+    font-size: 28px;
+    margin-top: 24px;
+    margin-bottom: 8px;
+}
+
+.password {
+    height: 60px;
+    background-color: rgba(0,0,0,0.40);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--fontColor);
+    border: 1px solid #313131;
+    transition: transform 0.5s;
+}
+
+.password:hover {
+    transform: scale(1.05);
+}
+
+.tooltip {
+    color: var(--fontColor);
+    position: relative;
+    top: 20px;
+    padding: 6px 8px;
+    background: var(--tooltipBg);
+    text-align: center;
+    font-size: 16px;
+    border-radius: 6px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.hide {
+    display: none;
+}
+
+.container-password:hover .tooltip {
+    visibility: visible;
+    bottom: 50px;
+    opacity: 1;
+}
+
+.btn {
+    width: 4rem;
+    height: 2rem;
+    background-color: var(--btnBg);
+    color: var(--btnFont);
+    border-radius: 5px;
+    margin-top: 2rem;
+}
+
+:root {
+    --white: #fff;
+    --black: #181818;
+    --tooltipB: rgba(15,15,15);
+    --tooltipW: #DFDFDF;
+}
+
+.light-theme {
+    --bg: var(--white);
+    --fontColor: var(--black);
+    --btnBg: var(--black);
+    --btnFont: var(--white);
+    --tooltipBg: var(--tooltipW);
+}
+
+.dark-theme {
+    --bg: var(--black);
+    --fontColor: var(--white);
+    --btnBg: var(--white);
+    --btnFont: var(--black);
+    --tooltipBg: var(--tooltipB);
+}
